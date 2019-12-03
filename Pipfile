@@ -13,6 +13,7 @@ django-rest-auth = "==0.9.5"
 django-allauth = "==0.40.0"
 pandas = "*"
 django-filter = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
