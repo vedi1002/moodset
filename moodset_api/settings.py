@@ -89,12 +89,12 @@ WSGI_APPLICATION = 'moodset_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'moodset',
+        'USER': 'moodsetuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
