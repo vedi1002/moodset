@@ -9,7 +9,7 @@ class Filter:
         #calculate number of clusters
         kClusters = max(20, int(self.userSongsDf.shape[0] * 5))
 
-        filename = "K_Classes/" + str(kClusters) + ".csv"
+        filename = "/Users/ptrivedi/git-repos/moodset-api/playlists/K_Classes/" + str(kClusters) + ".csv"
         print("Accesing filename:", filename)
         return self._filter_for_songs(filename)
 
@@ -32,7 +32,7 @@ class Filter:
         filteredDF = filteredDF.drop_duplicates()
         allIdList = filteredDF['id'].to_list()
 
-        allSongsWithFeaturesDf = pd.read_csv("tracks_features_89338.csv")
+        allSongsWithFeaturesDf = pd.read_csv("/Users/ptrivedi/git-repos/moodset-api/playlists/tracks_features_89338.csv")
         featuresFilteredDf = allSongsWithFeaturesDf[allSongsWithFeaturesDf['id'].isin(allIdList)]
 
         return featuresFilteredDf
