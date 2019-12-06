@@ -24,7 +24,7 @@ First make sure you have `pipenv` installed and run:
 
 This should install all needed libraries for the project and start the moodset virtual environment. Now setup up the local PostgresQL database and configure `moodset_api/settings.py`. Use [this](https://medium.com/agatha-codes/painless-postgresql-django-d4f03364989) guide. After you have made the migrations, run:
 
-    python manage.py populated_db
+    python manage.py populate_db
     python manage.py runserver
 
 The server is hosted at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Append the following url paths to access different API endpoints.
